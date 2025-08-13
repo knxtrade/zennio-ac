@@ -1,0 +1,141 @@
+site_name: Zennio + AC
+site_url: https://zennio-ac.knx-trade.ru
+site_author: KNX-TRADE
+copyright: Copyright &copy; MMXXV - <a href="https://knx-trade.ru" target="_blank">KNX-TRADE</a> by <a href="https://abasta.ru/contactus" target="_blank">ABASTA LLC</a>
+theme:
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  custom_dir: overrides
+  language: ru
+  favicon: images/favicon.png
+  logo: images/logo.png
+  font:
+    text: "Roboto"
+    code: "Roboto Mono"
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.prefetch
+    #- navigation.top
+    - navigation.indexes
+    - navigation.footer
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/knxtrade_news
+    - icon: fontawesome/brands/vk
+      link: https://vk.com/knxtrade
+    - icon: fontawesome/brands/square-youtube
+      link: https://rutube.ru/u/knxtrade/
+    - icon: fontawesome/brands/square-git
+      link: https://github.com/knxtrade/zennio-ac.git 
+  analytics:
+    provider: google
+    property: G-CRD7BKJGPM
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+  - javascripts/feedback.js
+markdown_extensions:
+  - admonition
+  - abbr
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.blocks.caption
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section for reference
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      lang:
+        - ru
+        - en
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
+nav:
+  - Введение:
+      - index.md
+  - Кондиционеры: 
+      - ac/index.md
+      - KLIC-MITT v3: ac/klic-mitt_v3.md
+      - KLIC-SG: ac/klic-sg.md
+      - KLIC-FJT: ac/klic-fjt.md
+      - KLIC-FJ: ac/klic-fj.md
+      - KLIC-TS: ac/klic-ts.md
+      - KLIC-PA: ac/klic-pa.md
+      - KLIC-LG1: ac/klic-lg1.md
+      - KLIC-DD V3: ac/klic-dd_v3.md
+      - KLIC-DI V2: ac/klic-di_v2.md
+  - ИК пульты: 
+      - ir/index.md
+      - IRSC-PLUS: ir/irsc_plus.md
+  - Аэротермия: 
+      - aerotherm/index.md
+      - KLIC-MITTE: aerotherm/klic-mitte.md
+      - KLIC-DA v2: aerotherm/klic-da_v2.md
+      
