@@ -1,5 +1,5 @@
-# Reference tables compatibility
+# Справочные таблицы совместимости**
 
-## Reference tables of compatibility of the KNX gateways Zennio with various air conditioners
+## Справочные таблицы совместимости шлюзов KNX Zennio с различными кондиционерами и тепловыми насосами
 
 URL: <https://zennio-ac.knx-trade.ru>

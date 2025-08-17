@@ -24,18 +24,23 @@ theme:
         name: Switch to system preference
   custom_dir: overrides
   language: ru
-  favicon: images/favicon.png
-  logo: images/logo.png
+  favicon: assets/images/favicon.png
+  logo: assets/images/logo.webp
   font:
-    text: "Roboto"
+    text: "Roboto Mono"
     code: "Roboto Mono"
   features:
     - search.suggest
     - search.highlight
     - navigation.path
-    - navigation.instant
-    - navigation.instant.prefetch
-    #- navigation.top
+    #- navigation.instant
+    #- navigation.instant.prefetch
+    - navigation.tracking           # Отслеживание якоря
+    - toc.follow                    # Следить за изменениями в оглавлении
+    #- navigation.tabs               # Вкладки навигации
+    #- navigation.tabs.sticky        # Закрепленные вкладки навигации
+    #- navigation.sections           # Секции навигации
+    - navigation.top
     - navigation.indexes
     - navigation.footer
   icon:
@@ -101,6 +106,8 @@ plugins:
       lang:
         - ru
         - en
+  - table-reader:
+      data_path: "docs/assets/tables"
   - glightbox:
       touchNavigation: true
       loop: false
