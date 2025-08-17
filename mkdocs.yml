@@ -69,7 +69,7 @@ extra:
       link: https://t.me/knxtrade_news
   analytics:
     provider: google
-    property: G-CRD7BKJGPM
+    property: G-5WBBTJJ3W2
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
