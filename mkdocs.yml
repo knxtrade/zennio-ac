@@ -126,9 +126,9 @@ plugins:
       manual: false
 nav:
   - Введение:
-      - index.md
+      - Zennio + AC: index.md
   - Кондиционеры: 
-      - ac/index.md
+      - AC: ac/index.md
       - KLIC-MITT v3: ac/klic-mitt_v3.md
       - KLIC-SG: ac/klic-sg.md
       - KLIC-FJT: ac/klic-fjt.md
