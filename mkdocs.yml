@@ -54,14 +54,14 @@ theme:
       quote: fontawesome/solid/quote-left
 extra:
   social:
-    - icon: fontawesome/brands/telegram
-      link: https://t.me/knxtrade_news
-    - icon: fontawesome/brands/vk
-      link: https://vk.com/knxtrade
-    - icon: fontawesome/brands/square-youtube
-      link: https://rutube.ru/u/knxtrade/
     - icon: fontawesome/brands/square-git
       link: https://github.com/knxtrade/zennio-ac.git 
+    - icon: fontawesome/brands/square-youtube
+      link: https://rutube.ru/u/knxtrade/
+    - icon: fontawesome/brands/vk
+      link: https://vk.com/knxtrade
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/knxtrade_news
   analytics:
     provider: google
     property: G-CRD7BKJGPM
